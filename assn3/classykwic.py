@@ -1,6 +1,8 @@
 #Author: Tram Ung
 #!/usr/bin/env python3
 import re
+CONST_SPACE_AFTER = 30 #space after
+CONST_SPACE_BEFORE = 20 #space before
 class Kwic:
     def __init__(self, excluded, lines):
         self.excluded = excluded
@@ -43,8 +45,6 @@ class Kwic:
 #format it using regex
     def format_it(self, sorted_keys, sorted_values):
         counter = 0
-        CONST_SPACE_AFTER = 30 #space after
-        CONST_SPACE_BEFORE = 20 #space before
         for phrase in sorted_values:
              s = r'((^|\s).{0,'+ str(CONST_SPACE_BEFORE) + r'})' + sorted_keys[counter] + r'(($|\s)(.{0,' + str(CONST_SPACE_AFTER - len(sorted_keys[counter])) + '})($|\s))'
              matchobj = re.search(s, phrase)

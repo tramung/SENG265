@@ -1,6 +1,5 @@
 # SENG265
-Software Engineering Methods at the University of Victoria
-The course provides an introduction to tools and techniques to promote programming productivity and software quality. Topics include:
+Software Engineering Methods at the University of Victoria.  The course provides an introduction to tools and techniques to promote programming productivity and software quality. Topics include:
 * Linux command-line basics
 * Multi-version software development
 * Software documentation
